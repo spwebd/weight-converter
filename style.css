@@ -1,57 +1,96 @@
-h1{
-    width: 100%;
+.container {
+    width: 95%;
+    margin-left: auto;
+    margin-right: auto;
+  
+    border-radius: 10px;
+    position: relative;
+} 
+
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    background-image: url('images/pexels-anete-lusina-4793221.jpg'); 
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat; 
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%; /* Ensure the body takes the full height of the viewport */
+    overflow: hidden; /* Prevent scrollbars */
+}
+
+header{
+   font-size: 40px;
+    margin-bottom: 20px;
+    margin-top: 10px;
+    text-align: center;
+    color: rgb(156, 22, 22);
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+.sub-head {
+    margin-bottom: 20px;
+    text-align: center;
+    color: rgb(156, 22, 22);
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+
+
+.sub {
+    text-align: center;
+    border: 2px rgb(34, 32, 32) solid;
+    border-radius: 5px;
+    margin-bottom: 5px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: grey;
     height: 30px;
-   margin-left: auto;
-   margin-right: auto;
-   text-align: center;
-   padding-bottom: 7px;
-   }
-   
-   body {
-     background-color: grey;
-   
-   }
-   
-   .container {
-       width: 100%;
-   height: 900px;
-       background-color:rgb(201, 189, 189) ;
-   }
-   
-   
-   .nav1 {
-       width: 17%;
-       height: 200px;
-       float: left;
-       border: solid black 2px;
-       text-align: center;
-      padding-bottom: 10px;
-      padding-top: 7px;
-      margin-bottom: 10px;
-   }
-   
-   .centerDoc {
-       width: 80%;
-       height: 300px;
-       float: right;
-       margin-bottom: 20px;
-       
-       padding-left: 10px;
-   }
-   
-   
-   img{
-       float: right;
-       width: 400px; 
-       height: 300px;
-   }
-   
-   .footer {
-       width: 100%;
-       margin-left: auto;
-       margin-right: auto;
-       margin-top: 20px;
-       height: 30px;
-       clear: both;
-       text-align: center;
-   }
+    width: 400px;
+}
+
+footer {
+    width: 100%;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    color: antiquewhite;
+    position: fixed;
+    bottom: 0 ;
+    left: 0;
+    color:whitesmoke;
+}
+
+@media (max-width: 433px) {
+    .sub {
+        width: 200px ;/* Adjust as needed */
+        height: 40px; /* Adjust as needed */
+    }
+}
+
+
+@media (min-width: 576px) {
+    .container {
+        max-width: 540px;
+      }
+    }
+    @media (min-width: 1200px) {
+        .container {
+          max-width: 1140px;
+        }
+      }
+      @media (min-width: 992px) {
+        .container {
+          max-width: 960px;
+        }
+      }
+      @media (min-width: 768px) {
+      .container {
+          max-width: 720px;
+        }
+    }
